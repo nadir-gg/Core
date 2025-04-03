@@ -6,7 +6,7 @@
 
   <groupId>ac.stevano</groupId>
   <artifactId>Core</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.1-DEVELOPMENT</version>
   <packaging>jar</packaging>
 
   <name>Core</name>

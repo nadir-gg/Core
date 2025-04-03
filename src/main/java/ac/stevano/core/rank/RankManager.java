@@ -39,14 +39,12 @@ public class RankManager {
     public void createRank(String name) {
         int highestWeight = 0;
 
-        // Find the highest weight
         for (Rank rank : ranks) {
             if (rank.getWeight() > highestWeight) {
                 highestWeight = rank.getWeight();
             }
         }
 
-        // New rank's weight is 10 higher than the highest found
         int newWeight = highestWeight + 10;
 
         Rank rank = new Rank(name);
@@ -55,7 +53,7 @@ public class RankManager {
         rank.setChatColor(ChatColor.WHITE.name());
         rank.setPrefix("");
         rank.setSuffix("");
-        ranks.add(rank); // Don't forget to add it to the set
+        ranks.add(rank);
 
         System.out.println("Created new rank " + name + " with weight " + newWeight + ".");
     }

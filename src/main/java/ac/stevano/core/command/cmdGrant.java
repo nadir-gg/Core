@@ -34,20 +34,11 @@ public class cmdGrant implements CommandExecutor {
             return false;
         }
 
-        //GRANT HERE
-        //CHECK PLAYERS WEIGHT AND IF HAS PERMISSION
-        // CANNOT GRANT SELF
-
         setRank(sender, target, rank);
-
         return false;
     }
 
     public void setRank(CommandSender granter, Player receiver, Rank rank) {
-        //CHECK IF PLAYER HAS PERMISSION TO GRANT THIS RANK
-        // CANNOT GRANT SELF
-        // ALSO ALLOW CONSOLE TO GRANT!
-
         Core.getCore().getPlayerDataManager().getPlayerData(receiver).setRank(rank);
         Core.getCore().getPlayerDataManager().refreshData(receiver);
 

@@ -28,12 +28,10 @@ public class cmdList implements CommandExecutor {
         List<Rank> sortedRanks = new ArrayList<>(ranks);
         sortedRanks.sort((r1, r2) -> Integer.compare(r2.getWeight(), r1.getWeight()));
 
-        // Format rank names
         String rankList = sortedRanks.stream()
                 .map(Rank::getDisplayName)
                 .collect(Collectors.joining(CC.RESET + ", "));
 
-        // Get and sort online players by rank weight
         List<Player> onlinePlayers = new ArrayList<>(Bukkit.getOnlinePlayers());
         onlinePlayers.sort((p1, p2) -> {
             Rank r1 = playerDataManager.getPlayerData(p1).getRank();
@@ -41,7 +39,6 @@ public class cmdList implements CommandExecutor {
             return Integer.compare(r2 != null ? r2.getWeight() : 0, r1 != null ? r1.getWeight() : 0);
         });
 
-        // Format player list with rank name colors
         String playerList = onlinePlayers.stream()
                 .map(player -> {
                     Rank rank = playerDataManager.getPlayerData(player).getRank();

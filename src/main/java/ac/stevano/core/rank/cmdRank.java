@@ -227,9 +227,8 @@ public class cmdRank implements CommandExecutor {
                     return false;
                 }
 
-                // Convert set to list and sort by weight (descending)
                 List<Rank> sortedRanks = new ArrayList<>(ranks);
-                sortedRanks.sort((r1, r2) -> Integer.compare(r2.getWeight(), r1.getWeight())); // Sort highest to lowest
+                sortedRanks.sort((r1, r2) -> Integer.compare(r2.getWeight(), r1.getWeight()));
 
                 player.sendMessage(CC.CHAT_BAR);
                 player.sendMessage(CC.BLUE + CC.BOLD + "Rank List (Highest to Lowest)");

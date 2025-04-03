@@ -39,10 +39,12 @@ public class PlayerDataListener implements Listener {
     private void applyPermissions(Player player, Set<Permission> permissions) {
         PlayerDataManager playerDataManager = Core.getCore().getPlayerDataManager();
         PlayerData data = playerDataManager.getPlayerData(player);
+        Set<Permission> currentPermissions = data.getPermissions();
 
         PermissionAttachment attachment = player.addAttachment(Core.getCore());
         for (Permission permission : permissions) {
             attachment.setPermission(permission, true);
+            if (currentPermissions.contains(permission)) return;
             data.addPermission(permission);
             data.save();
         }

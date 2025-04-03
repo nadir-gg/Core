@@ -19,22 +19,6 @@ public final class Core extends JavaPlugin {
     private PlayerDataManager playerDataManager;
     private ModeManager modeManager;
 
-    /*
-    TODO: API, GITHUB, ALLOW SOUP USE WITH CORE (SCOREBOARD), FORK ASSEMBLE OR CHANGE SCOREBOARD API
-
-    ** Check BasicListener
-    ** Check Grant
-    ** Add creation date to ranks
-    ** Hide list name on vanish
-    ** staff mode
-    ** update everyone's permission when their ranks permission(s) changes
-    ** FORK ASSEMBLE OR CHANGE SCOREBOARD API
-
-    ** /rank inherit
-    ** /rank uninherit
-    ** remove duplicate permissions in yml
-     */
-
     @Override
     public void onEnable() {
         core = this;
