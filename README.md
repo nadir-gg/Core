@@ -11,3 +11,5 @@ CoreAPI.getRank(name);
 CoreAPI.getPlayerData(player); 
 CoreAPI.isStaffMode(player); 
 ```
+
+[![](https://jitpack.io/v/nadir-gg/Core.svg)](https://jitpack.io/#nadir-gg/Core)
