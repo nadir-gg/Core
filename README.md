@@ -1,3 +1,6 @@
+[![](https://jitpack.io/v/nadir-gg/Core.svg)](https://jitpack.io/#nadir-gg/Core)
+
+
 basically a rank plugin
 
 use or change it if  you want idc
@@ -11,5 +14,3 @@ CoreAPI.getRank(name);
 CoreAPI.getPlayerData(player); 
 CoreAPI.isStaffMode(player); 
 ```
-
-[![](https://jitpack.io/v/nadir-gg/Core.svg)](https://jitpack.io/#nadir-gg/Core)
