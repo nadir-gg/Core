@@ -1,6 +1,5 @@
 package ac.stevano.core.staff.mode;
 
-import ac.stevano.core.Core;
 import ac.stevano.core.utils.CC;
 import org.bukkit.entity.Player;
 
@@ -22,7 +21,6 @@ public class ModeManager {
         }
 
         player.sendMessage(CC.WHITE + "You are" + CC.GREEN + " now " + CC.WHITE + "in staff mode.");
-        Core.getCore().createBoard(player);
         modeMap.add(player.getUniqueId());
     }
 
@@ -33,7 +31,6 @@ public class ModeManager {
         }
 
         player.sendMessage(CC.WHITE + "You are" + CC.RED + " no longer " + CC.WHITE + "in staff mode.");
-        Core.getCore().hideBoard(player);
         modeMap.remove(player.getUniqueId());
     }
 

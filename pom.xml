@@ -39,14 +39,6 @@
             </goals>
           </execution>
         </executions>
-          <configuration>
-              <relocations>
-                  <relocation>
-                      <pattern>fr.mrmicky.fastboard</pattern>
-                      <shadedPattern>ac.stevano.fastboard</shadedPattern>
-                  </relocation>
-              </relocations>
-          </configuration>
       </plugin>
     </plugins>
     <resources>
@@ -74,11 +66,6 @@
           <artifactId>spigot</artifactId>
           <version>1.8.8-R0.1-SNAPSHOT</version>
           <scope>provided</scope>
-      </dependency>
-      <dependency>
-          <groupId>fr.mrmicky</groupId>
-          <artifactId>fastboard</artifactId>
-          <version>2.1.4</version>
       </dependency>
   </dependencies>
 </project>
