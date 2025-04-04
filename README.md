@@ -15,3 +15,6 @@ CoreAPI.getRank(name);
 CoreAPI.getPlayerData(player); 
 CoreAPI.isStaffMode(player); 
 ```
+
+todo:
+no duplicate perms
